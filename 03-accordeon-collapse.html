@@ -14,5 +14,30 @@
 
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
+    <div class="accordeon" x-data="{open: 0}">
+      <section>
+        <button @click="open=1">Premier bouton</button>
+        <p x-show="open==1" x-collapse>Paphius quin etiam et Cornelius senatores, ambo venenorum 
+          artibus pravis se polluisse confessi, eodem pronuntiante Maximino sunt interfecti. pari sorte etiam procurator 
+          monetae extinctus est. Sericum enim et Asbolium supra dictos, quoniam cum hortaretur passim nominare, quos 
+          vellent, adiecta religione firmarat, nullum igni vel ferro se puniri iussurum, plumbi validis ictibus interemit. 
+          et post hoe flammis Campensem aruspicem dedit, in negotio eius nullo sacramento constrictus.</p>
+      </section>
+      <section>
+        <button @click="open=2">Deuxieme bouton</button>
+        <p x-show="open==2" x-collapse>Post haec indumentum regale quaerebatur et ministris 
+          fucandae purpurae tortis confessisque pectoralem tuniculam sine manicis textam, Maras nomine quidam inductus 
+          est ut appellant Christiani diaconus, cuius prolatae litterae scriptae Graeco sermone ad Tyrii textrini 
+          praepositum celerari speciem perurgebant quam autem non indicabant denique etiam idem ad usque discrimen 
+          vitae vexatus nihil fateri conpulsus est.</p>
+      </section>
+      <section>
+        <button @click="open=3">Troisieme bouton</button>
+        <p x-show="open==3" x-collapse>Eodem tempore etiam Hymetii praeclarae indolis viri 
+          negotium est actitatum, cuius hunc novimus esse textum. cum Africam pro consule regeret Carthaginiensibus 
+          victus inopia iam lassatis, ex horreis Romano populo destinatis frumentum dedit, pauloque postea cum 
+          provenisset segetum copia, integre sine ulla restituit mora.</p>
+      </section>
+    </div>
   </body>
 </html>
