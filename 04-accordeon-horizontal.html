@@ -5,87 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon horizontal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/04-accordeon-horizontal.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
       
   </head>
   <body>
-    <style>
-
-#accordeon {
-  display: flex; /* pour que les éléments soient alignés horizontalement */
-  margin: 0; /* pour éviter les marges par défaut */
-  padding: 0; /* pour éviter les "padding" par défaut */
-}
-
-#accordeon li {
-  width: 107px; /* largeur de chaque élément replié */
-  overflow: hidden; /* pour cacher le contenu dépassant de l'élément */
-  transition: width 0.5s; /* pour l'animation, transition sur width */
-  background-color: #eee; /* couleur de fond */
-  list-style: none; /* pour enlever les puces */
-  margin: 3px; /* pour espacer les éléments */
-  padding: 5px; /* pour espacer le contenu */
-  border-radius: 5px; /* pour arrondir les bords */
-}
-
-#accordeon li.actif {
-  width: 317px; /* largeur de l'élément déplié */
-}
-
-#accordeon li figure {
-  margin: 0; /* pour éviter les marges par défaut */
-  display: flex; /* pour que les éléments soient alignés horizontalement */
-  width: 317px; /* largeur de l'élément intrérieur */
-}
-
-#accordeon li figure figcaption {
-  width: 200px; /* largeur du texte */
-  padding: 10px; /* pour espacer le texte */
-  display: flex; /* pour que les éléments soient alignés verticalement */
-  flex-direction: column; /* pour que les éléments soient alignés verticalement */
-  gap: 10px; /* espace entre les éléments */
-}
-
-#accordeon li figure figcaption > * {
-  margin: 0; /* pour éviter les marges par défaut */
-  padding: 0; /* pour éviter les "padding" par défaut */
-}
-
-/* Style au survol */
-ul#accordeon li:hover {
-  flex: 3; /* pour agrandir l'élément survolé */
-}
-
-    </style>
     <h1>Accordéon horizontal</h1>
-
+    <a href="index.html">Retour à l'accueil</a>
     <ul id="accordeon">
       <li>
         <figure>
-          <img src="https://picsum.photos/100?random=1" alt="" width="102">
+          <img src="https://fastly.picsum.photos/id/975/200/200.jpg?hmac=FvLU8e3gef5UXnX5uXrQG87WFH6Mx0nTP-mIu215gQE" alt="" width="105">
           <figcaption>
             <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Et prima post Osdroenam quam, ut dictum est.</p>
           </figcaption>
         </figure>
       </li>
       <li>
         <figure>
-          <img src="https://picsum.photos/100?random=2" alt="" width="102">
+          <img src="https://fastly.picsum.photos/id/0/200/200.jpg?hmac=RZmZI0kb9l_aRWHFyOZUGyc8xsyV30HOJX8a4wuHWkA" alt="" width="105">
           <figcaption>
             <h3>Voluptas, repellat harum!</h3>
-            <p>Illum est nostrum vel sit nihil.</p>
+            <p>Montius nos tumore inusitato quodam et novo ut rebellis.</p>
           </figcaption>
         </figure>
       </li>
       <li>
         <figure>
-          <img src="https://picsum.photos/100?random=3" alt="" width="102">
+          <img src="https://fastly.picsum.photos/id/499/200/200.jpg?hmac=6OuceXs-LrhY-PtwyqBs_bARD8YWZEj9XuZ_ZY894Wc" alt="" width="105">
           <figcaption>
             <h3>Eligendi, laboriosam a.</h3>
-            <p>Quisquam id cupiditate ullam consectetur aut.</p>
+            <p>Has autem provincias, quas Orontes ambiens amnis imosque pedes.</p>
           </figcaption>
         </figure>
       </li>

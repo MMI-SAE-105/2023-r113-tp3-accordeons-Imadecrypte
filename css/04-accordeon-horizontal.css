@@ -1,0 +1,45 @@
+
+#accordeon {
+  display: flex; /* pour que les éléments soient alignés horizontalement */
+  margin: 0; /* pour éviter les marges par défaut */
+  padding: 0; /* pour éviter les "padding" par défaut */
+}
+
+#accordeon li {
+  width: 100px; /* largeur de chaque élément replié */
+  overflow: hidden; /* pour cacher le contenu dépassant de l'élément */
+  transition: width 0.5s; /* pour l'animation, transition sur width */
+  background-color: #eee; /* couleur de fond */
+  list-style: none; /* pour enlever les puces */
+  margin: 3px; /* pour espacer les éléments */
+  padding: 5px; /* pour espacer le contenu */
+  border-radius: 5px; /* pour arrondir les bords */
+}
+
+#accordeon li.actif {
+  width: 200px; /* largeur de l'élément déplié */
+}
+
+#accordeon li figure {
+  margin: 0; /* pour éviter les marges par défaut */
+  display: flex; /* pour que les éléments soient alignés horizontalement */
+  width: 317px; /* largeur de l'élément intrérieur */
+}
+
+#accordeon li figure figcaption {
+  width: 300px; /* largeur du texte */
+  padding: 10px; /* pour espacer le texte */
+  display: flex; /* pour que les éléments soient alignés verticalement */
+  flex-direction: column; /* pour que les éléments soient alignés verticalement */
+  gap: 10px; /* espace entre les éléments */
+}
+
+#accordeon li figure figcaption > * {
+  margin: 0; /* pour éviter les marges par défaut */
+  padding: 0; /* pour éviter les "padding" par défaut */
+}
+
+/* Style au survol */
+ul#accordeon li:hover {
+  flex: 3; /* pour agrandir l'élément survolé */
+}
