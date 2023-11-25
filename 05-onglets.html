@@ -8,9 +8,10 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="/05-onglets.css">
   </head>
-  
+
   <body x-data="{isOpen: 1}">
     <h1>Onglets</h1>
+    <a href="index.html">Retour à l'accueil</a>
     <div id="onglets" >
      <ul role="tablist">
       <li role="tab" @click="isOpen = 1" :class="{actif:isOpen===1}">Onglet 1</li>
